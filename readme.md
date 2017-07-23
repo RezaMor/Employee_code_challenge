@@ -11,32 +11,16 @@ Welcome! This document explains how you can setup Employee Register (Address Boo
 
 ## Installation
 
-```
-	git clone <this repo>
+Command | Description
+:------ | :----------
+<pre>git clone <this repo></pre> | clones the current repository on your machine
+<pre>npm install --global --production windows-build-tools</pre> | If you're using Windows you need to install all node-gyp dependencies with the following commands (NOTE: Run As Admininstrator in Windows PowerShell)
+<pre>npm install --global node-gyp</pre> | install the gyp package
+<pre>npm install</pre> | install the project and project dependencies
+<pre>npm start</pre> | run the project
+<pre>go to http://localhost:3000</pre> | **http://localhost:3000**
+<pre>npm run test</pre> | runs all the unit test in the project (unit tests should be located in unitTest directries for each module
 
-If you're using Windows you need to install all node-gyp dependencies with the following commands 
-	(NOTE: Run As Admininstrator in Windows PowerShell):
-
-	npm install --global --production windows-build-tools
-
-and then install the package
-
-	npm install --global node-gyp
-
-and then run the following commands 
-
-	npm install
-  
-	npm start
-  
-opne you browser to http://localhost:3000 and see the Employee Register
-
-
-You may run all the unit test by running the following command
-	
-	npm run test:unit
-
-```
 
 
 <!--[]-->
