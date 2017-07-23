@@ -1,0 +1,26 @@
+
+<table class="table">
+  <thead>
+    <tr>
+        <th class="col-md-2" style="cursor: pointer" ng-repeat="(key, value) in $ctrl.data[0]"
+            ng-click="$ctrl.changeSorting(key)">
+            {{value.label}}
+            <i class="glyphicon"
+               ng-class="$ctrl.getIcon(key)">
+            </i>
+
+        </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="row in $ctrl.data">
+      <td ng-repeat="(key, value) in row">{{value.value}}</td>
+      <td><button type="button" class="btn btn-danger" ng-click="$ctrl.deleteRow(row)">
+          Delete
+      </button></td>
+    </tr>
+    <tr ng-if="!$ctrl.data || !$ctrl.data.length"><td>No results found</td></tr>
+  </tbody>
+</table>
+
+

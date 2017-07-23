@@ -1,0 +1,36 @@
+<h1>Employee Register</h1>
+
+<ol>
+  <li>Press <b>Show all Employees</b> to view all the employees.</li>
+  <li>Start adding a new Employee by clicking on <b>Add new Employee</b>.</li>
+  <li>Search for staff members using the <b>text boxes above each table heading</b>.</li>
+  <li>Sort all the staff in <b>alphabetical or reverse-alphabetical</b> order by clicking on <b>arrow icon on table headings</b>.</li>
+  <li>You may <b>delete staff members</b> using the buttons next to each <b>table row</b>.</li>
+</ol>
+
+<hr/>
+<div class="form-group">
+    <div class="col-lg-9">
+        <div class="form-inline">
+            <button type="button" class="btn btn-primary" ng-click="$ctrl.addEmployee()">Add new Employee</button>
+            <button type="button" class="btn btn-success" ng-click="$ctrl.getAllEmployees()">Show all Emloyees</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="btn-group">
+</div>
+
+<hr/>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Employees</div>
+  <div class="panel-body" ng-bind-html="$ctrl.result"></div>
+  <smart-table-search-component data="$ctrl.returnAllEmployees()"
+                                on-search-param-changed="$ctrl.onSearchParamChanged(searchParams)">
+  </smart-table-search-component>
+  <smart-table-component data="$ctrl.employeeList" on-delete-row="$ctrl.deleteEmployee(selectedRow)"
+                   on-sort-column="$ctrl.onSortByKey(selectedColumnKey, descending)">
+  </smart-table-component>
+</div>

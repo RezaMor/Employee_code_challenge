@@ -1,0 +1,13 @@
+<form>
+    <div class="row">
+        <div class="col-md-2" ng-repeat="(key, value) in $ctrl.data[0]">
+            <div class="md-form">
+                <input type="text" autocomplete="off" id="{{key}}" name="{{key}}"
+                       ng-model="$ctrl.searchParams[key]" ng-change="$ctrl.searchParamChanged()"
+                       placeholder="Search {{value.label}}" class="form-control">
+            </div>
+        </div>
+    </div>
+</form>
+
+
