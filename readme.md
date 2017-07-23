@@ -77,36 +77,3 @@ I want to be able to add a new employee (first name, last name, department and a
 
 * I want the ability to sort all staff alphabetically by surname.
 
-<!--[]-->
-
-<!--[CN_BUILD_TASKS]-->
-## Build Tasks
-
-Command | Description
-:------ | :----------
-<pre>npm run build</pre> | Generate production build into [dist/](dist/) folder
-<pre>npm run build:serve</pre> | Generate production build and serve on **http://localhost:3000**'
-<pre>npm run dev</pre> | Run project in development mode (verify code, create dev build into dev/ folder, serve on **http://localhost:3000**, watch for changes and reload the browser automatically)
-<pre>npm start</pre> | Alias for `npm run dev` task
-<pre>npm run build:dev</pre> | Create a development build using Webpack<ul><li>Sourcemaps</li><li>Hot reloading of source code</li></ul>
-<pre>npm run build:prod</pre> | Create a production build using Webpack<ul><li>Minifies source code</li><li>Sourcemaps</li><li>Dead code removal</li><li>Hashes added to file names for cache-busting</li></ul>
-
-
-
-<!--[]-->
-
-<!--[CN_TEST_TASKS]-->
-## Test Tasks
-
-Command | Description
-:------ | :----------
-<pre>npm test</pre> | Alias for `npm run test:unit` task
-<pre>npm run test:coverage</pre> | Alias for test:unit:once, which also does test coverage checks and will fail if test coverage is not sufficient
-<pre>npm run test:unit</pre> | Run unit tests whenever JS source or tests change<ul><li>Uses Karma and Jasmine 2</li><li>Code coverage</li><li>Runs continuously (best to run in a separate window)</li></ul>
-<pre>npm run test:unit:debug</pre> | Run unit tests but disable code coverage to make debugging in a browser easier<ul><li>Runs continuously (best to run in a separate window)</li><li>No code coverage to make it easier to read source & testcode</li></ul>
-<pre>npm run test:unit:once</pre> | Run unit tests once<ul><li>Tests are run a single time</li><li>Good command for continuous integration testing</li></ul>
-<pre>npm run test:system</pre> | Run browser tests against the *development* web server (the development server **must** be running)
-
-
-
-<!--[]-->
