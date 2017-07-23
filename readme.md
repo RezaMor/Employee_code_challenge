@@ -9,6 +9,21 @@ Welcome! This document explains how you can setup Employee Register (Address Boo
 <!--[CN_GETTING_STARTED]-->
 # Getting Started
 
+## Introduction
+
+We would like you to implement an Address Book for a Branch Manager that holds employee names, phone number and their department.
+
+I want to be able to add a new employee (first name, last name, department and a single phone number).
+
+* I want to be able to search for staff members by their department.
+
+* I want to be able to search for staff members by name.
+
+* I want to be able to delete an employee.
+
+* I want the ability to sort all staff alphabetically by surname.
+
+
 ## Installation
 
 Command | Description
@@ -62,18 +77,4 @@ employee_register_code_challenge	/
 
 
 <!--[]-->
-
-### Introduction
-
-We would like you to implement an Address Book for a Branch Manager that holds employee names, phone number and their department.
-
-I want to be able to add a new employee (first name, last name, department and a single phone number).
-
-* I want to be able to search for staff members by their department.
-
-* I want to be able to search for staff members by name.
-
-* I want to be able to delete an employee.
-
-* I want the ability to sort all staff alphabetically by surname.
 
